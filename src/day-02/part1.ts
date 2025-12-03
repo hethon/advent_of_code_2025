@@ -17,7 +17,7 @@ for (const [start, end] of ranges) {
 		if (id_lenght % 2 !== 0) continue;
 
 		const left = Math.floor(id / (10 ** (id_lenght / 2)));
-		const right = Math.floor(id % (10 ** (id_lenght / 2)));
+		const right = id % (10 ** (id_lenght / 2));
 
 		if (left === right) {
 			invalid_ids_sum += id;
