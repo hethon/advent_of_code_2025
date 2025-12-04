@@ -1,0 +1,17 @@
+{
+    "folders":
+    [
+        {
+            "path": "."
+        }
+    ],
+    "build_systems":
+    [
+        {
+            "name": "Run TSX (pnpm)",
+            "shell_cmd": "pnpm tsx \"$file\"",
+            "working_dir": "$project_path",
+            "selector": "source.ts"
+        }
+    ]
+}
